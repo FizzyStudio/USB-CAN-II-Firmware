@@ -20,21 +20,60 @@
 
 #define		USBCAN2			0x04
 
-
+/*********************************************************************************************************
+	CAN_BOARD_INFO 结构体包含接口卡的设备信息。结构体将在CAN_ReadBoardInfo函数中被填充。
+*********************************************************************************************************/
 typedef struct _CAN_BOARD_INFO {
 	USHORT hw_Version;				//硬件版本号，用 16 进制表示。比如 0x0100 表示 V1.00。
-	USHORT fw_Version;
-	USHORT dr_Version;
-	USHORT in_Version;
-	USHORT irq_Num;
-	BYTE can_Num;
-	CHAR str_Serial_Num[20];
-	CHAR str_hw_Type[40];
-	USHORT Reserved[4];
+	USHORT fw_Version;				//固件版本号，用 16 进制表示
+	USHORT dr_Version;				//驱动程序版本号，用 16 进制表示
+	USHORT in_Version;				//接口库版本号，用 16 进制表示
+	USHORT irq_Num;					//板卡所使用的中断号
+	BYTE can_Num;					//板卡CAN通道数
+	CHAR str_Serial_Num[20];		//板卡序列号
+	CHAR str_hw_Type[40];			//硬件类型，比如“USBCAN V1.00”（注意：包括字符串结束符’ \0’）
+	USHORT Reserved[4];				//系统保留
 } CAN_BOARD_INFO, *PCAN_BOARD_INFO;
 
+/*********************************************************************************************************
+	CAN_OBJ 结构体是 CAN 帧结构体，即 1 个结构体表示一个帧的数据结构。
+	在发送函数 VCI_Transmit 和接收函数 VCI_Receive 中，被用来传送 CAN 信息帧。
+*********************************************************************************************************/
+typedef struct _CAN_OBJ {
+	UINT ID;						//帧 ID。 32 位变量，数据格式为靠右对齐。
+	UINT TimeStamp;					//设备接收到某一帧的时间标识。只有智能卡才有时间标示，如 USBCAN 系列与PCI-5010/20。 时间标示从 CAN 卡上电开始计时，计时单位为 0.1ms。
+	BYTE TimeFlag;					//是否使用时间标识。为 1 时 TimeStamp 有效， TimeFlag 和 TimeStamp 只在此帧为接收帧时有意义。
+	BYTE SendType;					//发送帧类型 0正常发送 1单次发送 2自发自收 3单次自发自收 只在此帧为发送帧时有意义
+	BYTE RemoteFlag;				//是否是远程帧 =0 时为为数据帧， =1 时为远程帧
+	BYTE ExternFlag;				//是否是扩展帧 =0 时为标准帧（11 位 ID）， =1 时为扩展帧（29 位 ID）
+	BYTE DataLen;					//数据长度 DLC (<=8)，即 CAN 帧 Data 有几个字节
+	BYTE Data[8];					//CAN 帧的数据
+	BYTE Reserved[3];
+} VCI_CAN_OBJ, *PVCI_CAN_OBJ;
 
+/*********************************************************************************************************
+	CAN_STATUS 结构体包含 CAN 设备中的 CAN 控制器状态信息(此函数只对使用SJA1000 控制器的设备有效)。
+	结构体将在 VCI_ReadCANStatus 函数中调用时，被填充.
+*********************************************************************************************************/
+typedef struct _CAN_STATUS {
+	UCHAR ErrInterrupt;				//中断记录，读操作会清除中断
+	UCHAR regMode;					//CAN 控制器模式寄存器值
+	UCHAR regStatus;				//CAN 控制器状态寄存器值
+	UCHAR regALCapture;				//CAN 控制器仲裁丢失寄存器值
+	UCHAR regECCapture;				//CAN 控制器错误寄存器值
+	UCHAR regEWLimit;				//CAN 控制器错误警告限制寄存器值。默认为 96
+	UCHAR regRECounter;				//CAN 控制器接收错误寄存器值。为 0-127 时，为错误主动状态，为 128-254 为错误被动状态，为 255 时为总线关闭状态
+	UCHAR regTECounter;				//CAN 控制器发送错误寄存器值。为 0-127 时，为错误主动状态，为 128-254 为错误被动状态，为 255 时为总线关闭状态。
+	DWORD Reserved;
+} CAN_STATUS, *PCAN_STATUS;
 
-
+/*********************************************************************************************************
+	CAN_ERR_INFO 结构体用于装载库运行时产生的错误信息 。结构体将在CAN_ReadErrInfo 函数中被填充
+*********************************************************************************************************/
+typedef struct _ERR_INFO {
+	UINT ErrCode;					//错误码
+	BYTE Passive_ErrData[3];		//当产生的错误中有消极错误时表示为消极错误的错误标识数据
+	BYTE ArLost_ErrData;			//当产生的错误中有仲裁丢失错误时表示为仲裁丢失错误的错误标识数据
+} CAN_ERR_INFO, *PCAN_ERR_INFO;
 
 #endif

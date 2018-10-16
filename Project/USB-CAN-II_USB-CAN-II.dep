@@ -2,7 +2,7 @@ Dependencies for Project 'USB-CAN-II', Target 'USB-CAN-II': (DO NOT MODIFY !)
 F (.\startup_LPC17xx.s)(0x4F5835C6)(--cpu Cortex-M3 -g --apcs=interwork -I D:\Keil\ARM\RV31\INC -I D:\Keil\ARM\CMSIS\Include -I D:\Keil\ARM\Inc\NXP\LPC17xx --list ".\list\startup_LPC17xx.lst" --xref -o ".\obj\startup_LPC17xx.o" --depend ".\obj\startup_LPC17xx.d")
 F (..\Cmsis\core_cm3.c)(0x4B1C99F0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\ExtiDrive -I..\ExtiDrive\CAN -I..\ExtiDrive\UART -I D:\Keil\ARM\RV31\INC -I D:\Keil\ARM\CMSIS\Include -I D:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\core_cm3.o" --omf_browse ".\obj\core_cm3.crf" --depend ".\obj\core_cm3.d")
 I (D:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
-F (..\Cmsis\system_LPC17xx.c)(0x5BC447C0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\ExtiDrive -I..\ExtiDrive\CAN -I..\ExtiDrive\UART -I D:\Keil\ARM\RV31\INC -I D:\Keil\ARM\CMSIS\Include -I D:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\system_lpc17xx.o" --omf_browse ".\obj\system_lpc17xx.crf" --depend ".\obj\system_lpc17xx.d")
+F (..\Cmsis\system_LPC17xx.c)(0x5BC55F7B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\ExtiDrive -I..\ExtiDrive\CAN -I..\ExtiDrive\UART -I D:\Keil\ARM\RV31\INC -I D:\Keil\ARM\CMSIS\Include -I D:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\system_lpc17xx.o" --omf_browse ".\obj\system_lpc17xx.crf" --depend ".\obj\system_lpc17xx.d")
 I (D:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
 I (D:\Keil\ARM\Inc\NXP\LPC17xx\LPC17xx.h)(0x4FF500CC)
 I (D:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
@@ -44,5 +44,5 @@ I (D:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
 I (D:\Keil\ARM\Inc\NXP\LPC17xx\system_LPC17xx.h)(0x4F583772)
 I (..\ExtiDrive\UART\uart.h)(0x55978733)
 F (..\Doc\ReadMe.txt)(0x5350F0A2)()
-F (..\Common\error.h)(0x5BC55A44)()
-F (..\Common\common.h)(0x5BC55B8C)()
+F (..\Common\error.h)(0x5BC55F64)()
+F (..\Common\common.h)(0x5BC562C5)()
