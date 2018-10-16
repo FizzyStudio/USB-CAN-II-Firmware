@@ -17,15 +17,15 @@
 #ifndef _ERROR_H_
 #define _ERROR_H_
 
-/*****************************************CAN´íÎó********************************************************/
-#define		ERR_CAN_OVERFLOW		0x00000001		//CAN¿ØÖÆÆ÷FIFOÒç³ö
-#define		ERR_CAN_ERRALARM		0x00000002		//CAN¿ØÖÆÆ÷´íÎó±¨¾¯
-#define		ERR_CAN_PASSIVE			0x00000004		//CAN¿ØÖÆÆ÷Ïû¼«´íÎó
-#define		ERR_CAN_LOSE				0x00000008		//CAN¿ØÖÆÆ÷ÖÙ²Ã¶ªÊ§
-#define		ERR_CAN_BUSERR			0x00000010		//CAN¿ØÖÆÆ÷×ÜÏß´íÎó
-#define		ERR_CAN_BUSOFF			0x00000020		//CAN¿ØÖÆÆ÷×ÜÏß¹Ø±Õ
+/*****************************************CAN é”™è¯¯ç ********************************************************/
+#define		ERR_CAN_OVERFLOW		0x00000001		//CAN æŽ§åˆ¶å™¨å†…éƒ¨ FIFOæº¢å‡º
+#define		ERR_CAN_ERRALARM		0x00000002		//CAN æŽ§åˆ¶å™¨é”™è¯¯æŠ¥è­¦
+#define		ERR_CAN_PASSIVE			0x00000004		//CAN æŽ§åˆ¶å™¨æ¶ˆæžé”™è¯¯
+#define		ERR_CAN_LOSE			0x00000008		//CAN æŽ§åˆ¶å™¨ä»²è£ä¸¢å¤±
+#define		ERR_CAN_BUSERR			0x00000010		//CAN æŽ§åˆ¶å™¨æ€»çº¿é”™è¯¯
+#define		ERR_CAN_BUSOFF			0x00000020		//CAN æŽ§åˆ¶å™¨æ€»çº¿å…³é—­
 
-/*****************************************Í¨ÓÃ´íÎóÂë*****************************************************/
+/*****************************************Í¨é€šç”¨é”™è¯¯ç *****************************************************/
 #define		ERR_DEVICEOPENED		0x00000100		//Éè±¸ÒÑ´ò¿ª
 #define		ERR_DEVICEOPEN			0x00000200		//´ò¿ªÉè±¸´íÎó
 #define		ERR_DEVICENOTOPEN		0x00000400		//Éè±¸Ã»ÓÐ´ò¿ª
@@ -46,3 +46,4 @@
 #define		ERR_SEND_PARTIAL				0x00030006		//Ö»·¢ËÍÁË²¿·ÖCANÖ¡
 #define		ERR_SEND_TOO_FAST				0x00030007		//Êý¾Ý·¢ËÍÌ«¿ì Socket»º³åÇøÒÑÂú
 
+#endif 
