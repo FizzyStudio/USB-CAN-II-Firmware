@@ -22,7 +22,7 @@
 
 
 typedef struct _CAN_BOARD_INFO {
-	USHORT hw_Version;									//硬件版本号，用 16 进制表示。比如 0x0100 表示 V1.00。
+	USHORT hw_Version;				//硬件版本号，用 16 进制表示。比如 0x0100 表示 V1.00。
 	USHORT fw_Version;
 	USHORT dr_Version;
 	USHORT in_Version;
