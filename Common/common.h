@@ -18,7 +18,16 @@
 #ifndef _COMMON_H_
 #define _COMMON_H
 
-#define		USBCAN2			0x04
+#define		USBCAN2		0x04
+
+#define		HARDWARE_VERSION	0x0100
+#define		FIRMWARE_VERSION	0x0100
+#define		DRIVER_VERSION		0x0100
+#define		INTERFACE_VERSION	0x0100
+#define		IRQ_NUM				25
+#define		CAN_NUM				2
+#define		BOARD_SERIAL_NO		""
+#define		HARDWARE_TYPE		"USB-CAN-II V1.00"
 
 /*********************************************************************************************************
 	CAN_BOARD_INFO 结构体包含接口卡的设备信息。结构体将在CAN_ReadBoardInfo函数中被填充。
@@ -40,7 +49,7 @@ typedef struct _CAN_BOARD_INFO {
 	在发送函数 VCI_Transmit 和接收函数 VCI_Receive 中，被用来传送 CAN 信息帧。
 *********************************************************************************************************/
 typedef struct _CAN_OBJ {
-	UINT ID;						//帧 ID。 32 位变量，数据格式为靠右对齐。
+	UINT ID;						//帧ID。 32 位变量，数据格式为靠右对齐。
 	UINT TimeStamp;					//设备接收到某一帧的时间标识。只有智能卡才有时间标示，如 USBCAN 系列与PCI-5010/20。 时间标示从 CAN 卡上电开始计时，计时单位为 0.1ms。
 	BYTE TimeFlag;					//是否使用时间标识。为 1 时 TimeStamp 有效， TimeFlag 和 TimeStamp 只在此帧为接收帧时有意义。
 	BYTE SendType;					//发送帧类型 0正常发送 1单次发送 2自发自收 3单次自发自收 只在此帧为发送帧时有意义
