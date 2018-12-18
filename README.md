@@ -1,2 +1,2 @@
 # USB-CAN-II
-USB-CAN-II embedded program
+USB-CAN-II Firmware
