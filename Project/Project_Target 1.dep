@@ -1,0 +1,79 @@
+Dependencies for Project 'Project', Target 'Target 1': (DO NOT MODIFY !)
+F (..\Cmsis\core_cm3.c)(0x4B1C99F0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\core_cm3.o" --omf_browse ".\obj\core_cm3.crf" --depend ".\obj\core_cm3.d")
+I (G:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+F (..\Cmsis\startup_LPC17xx.s)(0x5346134C)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1" -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx --list ".\list\startup_LPC17xx.lst" --xref -o ".\obj\startup_LPC17xx.o" --depend ".\obj\startup_LPC17xx.d")
+F (..\Cmsis\system_LPC17xx.c)(0x535B5A14)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\system_lpc17xx.o" --omf_browse ".\obj\system_lpc17xx.crf" --depend ".\obj\system_lpc17xx.d")
+I (G:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (..\Cmsis\LPC17xx.h)(0x5345F4E8)
+I (..\Cmsis\core_cm3.h)(0x5345FBE2)
+I (G:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (G:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\Cmsis\system_LPC17xx.h)(0x4A821450)
+F (..\App\main.c)(0x5C4188D5)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\main.o" --omf_browse ".\obj\main.crf" --depend ".\obj\main.d")
+I (..\Cmsis\lpc17xx.h)(0x5345F4E8)
+I (..\Cmsis\core_cm3.h)(0x5345FBE2)
+I (G:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (G:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (G:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\Cmsis\system_LPC17xx.h)(0x4A821450)
+I (..\App\main.h)(0x535B5D82)
+I (..\ExtiDrive\USB\inc\type.h)(0x535B5D82)
+I (..\ExtiDrive\USB\inc\usb.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcfg.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbhw.h)(0x535B6456)
+F (..\App\LPC17xx_it.c)(0x535B54C0)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\lpc17xx_it.o" --omf_browse ".\obj\lpc17xx_it.crf" --depend ".\obj\lpc17xx_it.d")
+I (..\App\LPC17xx_it.h)(0x5343C174)
+I (..\Cmsis\lpc17xx.h)(0x5345F4E8)
+I (..\Cmsis\core_cm3.h)(0x5345FBE2)
+I (G:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (G:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (G:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\Cmsis\system_LPC17xx.h)(0x4A821450)
+F (..\ExtiDrive\USB\src\hiduser.c)(0x535B579A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\hiduser.o" --omf_browse ".\obj\hiduser.crf" --depend ".\obj\hiduser.d")
+I (..\ExtiDrive\USB\inc\type.h)(0x535B5D82)
+I (..\ExtiDrive\USB\inc\usb.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\hid.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcfg.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcore.h)(0x535B6424)
+I (..\ExtiDrive\USB\inc\hiduser.h)(0x535B6456)
+I (..\App\main.h)(0x535B5D82)
+F (..\ExtiDrive\USB\src\usbcore.c)(0x5C418739)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\usbcore.o" --omf_browse ".\obj\usbcore.crf" --depend ".\obj\usbcore.d")
+I (..\ExtiDrive\USB\inc\type.h)(0x535B5D82)
+I (..\ExtiDrive\USB\inc\usb.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcfg.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbhw.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcore.h)(0x535B6424)
+I (..\ExtiDrive\USB\inc\usbdesc.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbuser.h)(0x4A02836E)
+I (..\ExtiDrive\USB\inc\hid.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\hiduser.h)(0x535B6456)
+F (..\ExtiDrive\USB\src\usbdesc.c)(0x5C408967)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\usbdesc.o" --omf_browse ".\obj\usbdesc.crf" --depend ".\obj\usbdesc.d")
+I (..\ExtiDrive\USB\inc\type.h)(0x535B5D82)
+I (..\ExtiDrive\USB\inc\usb.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcfg.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbdesc.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\hid.h)(0x535B6456)
+F (..\ExtiDrive\USB\src\usbhw.c)(0x5C414110)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\usbhw.o" --omf_browse ".\obj\usbhw.crf" --depend ".\obj\usbhw.d")
+I (..\Cmsis\LPC17xx.H)(0x5345F4E8)
+I (..\Cmsis\core_cm3.h)(0x5345FBE2)
+I (G:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (G:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (G:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\Cmsis\system_LPC17xx.h)(0x4A821450)
+I (..\ExtiDrive\USB\inc\type.h)(0x535B5D82)
+I (..\ExtiDrive\USB\inc\usb.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcfg.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbreg.h)(0x4A02836E)
+I (..\ExtiDrive\USB\inc\usbhw.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcore.h)(0x535B6424)
+I (..\ExtiDrive\USB\inc\usbuser.h)(0x4A02836E)
+F (..\ExtiDrive\USB\src\usbuser.c)(0x535B586C)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I..\Cmsis -I..\App -I..\ExtiDrive\USB\inc -I G:\Keil\ARM\RV31\INC -I G:\Keil\ARM\CMSIS\Include -I G:\Keil\ARM\Inc\NXP\LPC17xx -o ".\obj\usbuser.o" --omf_browse ".\obj\usbuser.crf" --depend ".\obj\usbuser.d")
+I (..\ExtiDrive\USB\inc\type.h)(0x535B5D82)
+I (..\ExtiDrive\USB\inc\usb.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcfg.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbhw.h)(0x535B6456)
+I (..\ExtiDrive\USB\inc\usbcore.h)(0x535B6424)
+I (..\ExtiDrive\USB\inc\usbuser.h)(0x4A02836E)
+I (..\ExtiDrive\USB\inc\hiduser.h)(0x535B6456)
+I (..\App\main.h)(0x535B5D82)
+F (..\Doc\ReadMe.txt)(0x5C18B799)()

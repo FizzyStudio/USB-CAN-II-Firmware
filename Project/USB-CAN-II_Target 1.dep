@@ -1,2 +1,0 @@
-Dependencies for Project 'USB-CAN-II', Target 'Target 1': (DO NOT MODIFY !)
-F (.\startup_LPC17xx.s)(0x4F5835C6)(--cpu Cortex-M3 -g --apcs=interwork -I D:\Keil\ARM\RV31\INC -I D:\Keil\ARM\CMSIS\Include -I D:\Keil\ARM\Inc\NXP\LPC17xx --list "startup_LPC17xx.lst" --xref -o "startup_LPC17xx.o" --depend "startup_LPC17xx.d")
